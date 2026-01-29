@@ -4,7 +4,6 @@ FROM node:20-alpine AS builder
 WORKDIR /app/packages/web
 
 COPY packages/web/package.json ./
-COPY packages/web/package-lock.json ./
 COPY packages/web/tsconfig.json ./
 COPY packages/web/vite.config.ts ./
 COPY packages/web/postcss.config.js ./
